@@ -1,0 +1,42 @@
+Menthods to run during Development
+
+Build & Run from IDE
+
+1) Use Spring Tool Suite 4 or Eclipse IDE
+2) right click on Spring boot application
+3) Click Run As and CLick Spring Boot App to build and run Spring Boot Application
+
+Build & Run Using Maven
+
+1)  Right Click on pom.xml
+
+1) Right Click on pom.xml
+2) Selct "Run As" and Click Run Configuration
+3) 2nd Step will open Manage Run Configuration Popup
+4) Give Name "Weather Application Build-Run" , This will Weather Application Maven Build & Run Config
+5) Select Base Directory using work space and select directory where pom.xml reside
+6) Set Goal as  "Clean spring-boot:run" 
+7) Click Apply
+8) Now any time to build and Run application do following
+   - Right Click on pom.xml 
+   - Selct "Run As" and select "maven build"
+   - This will compine and run your application
+9) Developer can use short cut button on navigation of eclise also to run same maven build command
+
+Prefferable Approach During Development
+
+Both approach are good and stable. Maven approach is slighly more config at start to create 
+maven build config then Spring Boot App option from IDE
+During Development I usuall preffer Spring boot App but that just personnel peference and i have been using IDE
+for long time with normal Spring mvc and legacy app so i am more used with that.
+
+Prefferable Approach In Production for Deployment
+
+1) Option 1 - Fat Jar
+2) Option 2 - War File
+
+If Organization has set process for Container deployment then fat jar is good option as Spring boot fat jar file
+has already production grade tomcat
+
+If Organization has different Appication Server where other application are already being install and its going
+to be shared then packaging in war file is better option
